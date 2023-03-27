@@ -1,4 +1,7 @@
 # Fake.Targets.Strong
+
+> !!! ⚠️ MOVED: I decided to preserve the experiment here and moved the released version to https://github.com/farlee2121/Fake-StrongTargets
+
 Refer to fake targets by reference, not strings.
 
 This repo is just a proof of concept at this point. No library has been released and there may be some conflicts with Fake.Core with how modules are currently named.
