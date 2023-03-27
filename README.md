@@ -46,4 +46,4 @@ Target.construct "Name" func
 
 This way the target could be created with a builder pattern (no side-effects) and registered when complete.
 
-Not convinced it would be worth the effort though. The build targets don't have much configuration, their aren't clear usecases for operating on unregistered target data, and the scope is never broad enough that the side-effects are a problem.
+Not convinced it would be worth the effort though. The build targets don't have much configuration, there aren't clear usecases for operating on unregistered target data, and the scope is never broad enough that the side-effects are a problem.
