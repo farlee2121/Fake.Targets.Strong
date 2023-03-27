@@ -1,14 +1,7 @@
 ﻿module Build
 
 open Fake.Core
-
-//Context.setExecutionContext false ""() |> ignore
-
-let initTargets () =
-    Target.create "Hello" (fun _ ->
-        printfn "hello from FAKE!"
-  
-    )   
+open Fake.Strong 
 
 [<EntryPoint>]
 let main argv =
@@ -18,7 +11,9 @@ let main argv =
     |> Context.RuntimeContext.Fake
     |> Context.setExecutionContext
 
-    initTargets ()
+    let hello = Target.def "Hello" (fun _ ->
+        printfn "hello from FAKE!"
+    )   
 
-    Target.runOrDefault "Hello"
+    Fake.Strong.Target.runOrDefault hello
     0

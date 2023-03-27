@@ -14,4 +14,8 @@
     <PackageReference Include="Fake.IO.FileSystem" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="src\Fake.Targets.Strong.fsproj" />
+  </ItemGroup>
+
 </Project>
